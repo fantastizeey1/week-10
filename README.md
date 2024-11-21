@@ -20,7 +20,7 @@ To get started with this project, follow these steps:
 
 ```bash
 git clone https://github.com/fantastizeey1/week-10.git
-cd <week10>
+cd week10
 ```
 
 ### Install the required dependencies:

@@ -98,7 +98,7 @@ const Technology = () => {
                 </div>
                 <div
                   onClick={() => handleTechnologyChange(2)}
-                  className={`technology-tab w-[58px] h-[58px] p-5 flex justify-center items-center text-center bg-transparent mx-8 rounded-full border-2 border-[#707070] hover:border-white cursor-pointer mr-3 lg:ml-0 lg:mb-8 ${
+                  className={`technology-tab w-[58px] h-[58px] p-5 text-center bg-transparent mx-8 rounded-full border-2 border-[#707070] hover:border-white cursor-pointer mr-3 lg:ml-0 lg:mb-8 ${
                     technologyNumber === 2 ? "active" : ""
                   }`}
                 >

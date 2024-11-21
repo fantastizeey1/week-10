@@ -51,15 +51,15 @@ const Destination = () => {
       style={{ backgroundImage: `url('${backgroundImage}')` }}
     >
       <div className="flex flex-col justify-center items-center mt-4 font-barlow text-white md:items-start lg:mt-10 lg:mx-auto ">
-        <h1 className="p-4 md:my-10 md:mx-5 lg:mb-[50px] lg:text-[28px] font-condensed lg:mt-12">
+        <h1 className="p-4 md:mt-16 md:mx-5 lg:mb-[50px] lg:text-[28px] font-condensed lg:mt-12">
           PICK YOUR DESTINATION
         </h1>
         <div className="flex flex-col justify-center items-center lg:flex-row lg:gap-[140px] lg:items-start lg:justify-around">
-          <div className="lg:w-[445px]">
+          <div className="lg:w-[445px] flex justify-center items-center">
             <img
               src={planetImages[planetNumber]}
               alt=""
-              className="w-[170px] md:w-[300px] lg:w-[380px]"
+              className="w-[170px] md:w-[60%] lg:w-[380px]"
             />
           </div>
           <div className="flex flex-col justify-center items-center lg:w-[445px] lg:items-start">

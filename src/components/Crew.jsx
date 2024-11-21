@@ -48,15 +48,15 @@ const Crew = () => {
   };
   return (
     <div
-      className="h-screen flex-wrap flex flex-col items-center justify-center w-full bg-cover lg:justify-start lg:items-start overflow-hidden"
+      className=" md:min-h-full h-screen flex-wrap flex flex-col items-center justify-center w-full bg-cover lg:justify-start lg:items-start overflow-hidden"
       style={{ backgroundImage: `url('${backgroundImage}')` }}
     >
-      <div className="flex flex-col justify-start  items-center -mt-10 text-white text-center p-5 md:items-start md:-mt-80 lg:mt-10 lg:mx-auto lg:items-start lg:justify-start lg:ml-20 ">
-        <h1 className="p-4 mt-10 md:text-[20px] font-condensed md:mb-8">
+      <div className="flex flex-col justify-start md:h-[calc(100vh-110px)]  items-center md:gap-20 -mt-10 text-white text-center p-5 md:items-start md: lg:mt-10 lg:mx-auto lg:items-start lg:justify-start lg:ml-20 ">
+        <h1 className="p-4 mt-10 md:text-[20px] font-condensed md:mb-10">
           MEET YOUR CREW
         </h1>
-        <div className="flex flex-col-reverse justify-center items-center md:flex-col lg:flex-row lg:gap-[30px] lg:items-start lg:justify-around">
-          <div className="flex flex-col-reverse justify-center items-center md:flex-col lg:justify-start lg:w-[50%] lg:items-start">
+        <div className="flex flex-col-reverse justify-center items-center  md:h-full md:flex-col md:gap-10 lg:flex-row lg:gap-[30px] lg:items-start lg:justify-around">
+          <div className="flex flex-col-reverse justify-start items-center md:-mt-[100px] md:h-[30%] md:flex-col lg:justify-start lg:w-[50%] lg:items-start">
             <div className="flex flex-col mt-6">
               <h2 className="uppercase font-bellefair text-[#88898a] my-2 md:text-[24px] md: lg:text-[32px] lg:text-start">
                 {data.crew[crewNumber].role}
@@ -97,7 +97,7 @@ const Crew = () => {
             </div>
           </div>
 
-          <div className="lg:w-[40%] border-b-[1px] border-[#707070] w-[80%] flex items-center justify-center md:border-none mx-2 md:-mb-96 md:mt-14 lg:-mt-6 lg:mx-0 lg:border-b-[1px] lg:border-[#707070] lg:h-[calc(100vh-150px)]">
+          <div className="lg:w-[40%] border-b-[1px] border-[#707070] w-[80%] flex items-center justify-center md:border-none mx-2   lg:-mt-6 lg:mx-0 lg:border-b-[1px] lg:border-[#707070] lg:h-[calc(100vh-150px)]">
             <IoIosArrowBack
               onClick={() =>
                 handleCrewChange(
@@ -110,7 +110,7 @@ const Crew = () => {
             <img
               src={crewImages[crewNumber]}
               alt=""
-              className="w-[170px] md:w-[450px] lg:w-[70%] lg:h-[80%]  "
+              className="w-[170px] md:w-[400px] md:h-[60%] lg:w-[70%] lg:h-[80%]  "
             />
             <IoIosArrowForward
               onClick={() =>
